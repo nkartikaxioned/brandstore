@@ -154,6 +154,7 @@ header h1 { height: 36px; }
 .common-li li a { 
   font-size: 12px;
   text-transform: uppercase; 
+  transition: .3s;
 }
 
 .menu-one-list { font-weight: 600; }
@@ -448,11 +449,11 @@ h1 a, h1 a img { height: 100%; object-fit: cover;}
   height: 2px;
   display: block;
   position: absolute;
-  top: 11%;
+  top: 9%;
   left: 50%;
   background: #6198eb;
-    font-size: 0;
-    transform: translate(-50%, -11%);
+  font-size: 0;
+  transform: translate(-50%, -9%);
 }
 
  .featured-products .wrapper { width: 68%; }
@@ -581,6 +582,8 @@ h1 a, h1 a img { height: 100%; object-fit: cover;}
     height: 50px;
  }
 
+ .offer .wrapper { width: 63%; }
+
  .offer p { 
   padding: 20px 0;
   font-size: 20px;
@@ -595,12 +598,84 @@ h1 a, h1 a img { height: 100%; object-fit: cover;}
   footer styling starts here
 =================================*/ 
 
+/* top footer style start */
 
+footer .wrapper { width: 63%; }
 
+.top-footer { 
+  margin: 40px 0;
+  display: flex; 
+  flex-wrap: wrap;
+}
 
+.top-footer h6 a {
+  width: 60px;
+  height: 30px;
+}
 
+.for-him,.for-her { 
+  width: 20%;
+  display: flex;
+  flex-direction: column; 
+}
 
+.for-him li a,.for-her li a {
+  padding: 4px 0;
+  color: #858282;
+  font-size: 13px;
+  text-transform: capitalize;
+  transition: .3s;
+} 
 
+.logo { width: 40%; }
+.subscribe { width: 15%; }
+
+.subscribe-form input { 
+  width: 100%;
+  border: 1px solid var(--lightGrey);
+  outline: 0;
+ }
+
+ .subscribe-btn { margin-top: 15px; }
+
+ .subscribe-btn a {
+  padding: 10px 12%;
+  border: 1px solid #3584D6;
+  background: #3584D6;
+  color: var(--white);
+  font-size: 12px;
+  transition: .3s;
+ }
+
+ .logo h6 { margin-bottom: 40px; }
+ .top-footer h6 { margin-bottom: 20px; }
+/* top footer style end */
+
+/* bottom footer style start */
+
+.social-media,.bottom-footer {  display: flex; }
+.bottom-footer {  justify-content: space-between; }
+.bottom-footer p { font-size: 12px; }
+.social-media li { padding: 10px; }
+
+.social-media li a { 
+  font-size: 0; 
+  transition: .3s;
+}
+
+.social-media li a::before {
+  color: var(--black);
+  font-family: "fontAwesome";
+  font-size: 15px;
+} 
+
+.facebook::before { content: "\f09a"; }
+.twitter::before { content: "\f099"; }
+.instagram::before { content: "\f16d"; }
+.youtube::before { content: "\f167"; }
+.google::before { content: "\f1a0"; }
+.abc::before { content: "\f1aa"; }
+/* bottom footer style end */
  /*=================================
   footer styling ends here
 =================================*/ 
@@ -625,6 +700,23 @@ h1 a, h1 a img { height: 100%; object-fit: cover;}
 } 
 
 /* home.html style end*/
+/* header style */
+.common-li li a:hover { color: var(--black);}
+/* header style end */
+.subscribe-btn a:hover {
+  border: 1px solid var(--black);
+  background: transparent;
+  color: var(--black);
+}
+
+/* footer section start */
+
+.for-him li a:hover,.for-her li a:hover { color: #3584D6; }
+
+.social-media li a:hover { 
+  color: #3584D6;
+ }
+
 }
 
 /*media query for 540px starts here*/
