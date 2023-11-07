@@ -110,10 +110,18 @@ li {
   --white:#fff;
   --red:#f32323;
   --lightGrey:#979393;
+  --backgroungGrey: #F5F7F9;
+  --fontGrey: #858282;
 }
 
 .font-white { color: var(--white); }
 .caps-first { text-transform: capitalize; }
+.caps { text-transform: uppercase; }
+
+.capital-bold {
+  text-transform: capitalize;
+  font-weight: 600;
+}
 
 /*for wrapper*/
 .wrapper {
@@ -167,10 +175,7 @@ h1 a, h1 a img { height: 100%; object-fit: cover;}
 }
 
 .menu-first, .menu-second {  flex-basis: 42%; }
-
-.menu-first {
-  margin-left: 1%;
-}
+.menu-first { margin-left: 1%; }
 
 .menu-second {
  display: flex;
@@ -200,6 +205,7 @@ h1 a, h1 a img { height: 100%; object-fit: cover;}
   justify-content: end;
   align-items: center;
 }
+
 /*=================================
   Header styling ends here
 =================================*/  
@@ -273,7 +279,9 @@ h1 a, h1 a img { height: 100%; object-fit: cover;}
 .banner {
   height: 100vh;
   position: relative; 
-  background-image:linear-gradient(rgba(35, 101, 150, 0.5), rgba(35, 101, 150, 0.5)), url("/assets/images-logo/home-new-bg-free-img.jpeg");
+  background-image:linear-gradient(rgba(35, 101, 150, 0.5),
+   rgba(35, 101, 150, 0.5)), 
+   url("/assets/images-logo/home-new-bg-free-img.jpeg");
   filter: brightness(0.8);
   min-height: 400px; 
   background-attachment: fixed;
@@ -292,11 +300,7 @@ h1 a, h1 a img { height: 100%; object-fit: cover;}
   transform: translate(-30%, -50%);
 }
 
-.banner-content h2 {
-  font-size: 47px;
-    font-weight: 600;
-    text-transform: capitalize;
-}
+.banner-content h2 { font-size: 47px; }
 
 .banner-content p{
   margin: 20px 0;
@@ -325,9 +329,11 @@ h1 a, h1 a img { height: 100%; object-fit: cover;}
     background: transparent;
     color: var(--white);
 }
+
 /* banner secton style end*/
 
 /* offer-section style start */
+
 .logo-slider-container { 
   margin: 42px 0;
   position: relative;
@@ -404,6 +410,7 @@ h1 a, h1 a img { height: 100%; object-fit: cover;}
   left: 55%;
     transform: translate(-55%, -6%);
 }
+
 .content-text { width: 80%; }
 
 .content-text p { 
@@ -412,10 +419,7 @@ h1 a, h1 a img { height: 100%; object-fit: cover;}
   line-height: 1.5;
 }
 
-.content-text h3 { 
-  font-size: 18px; 
-  font-weight: 600;
-}
+.content-text h3 { font-size: 18px; }
 
 .shop-now-btn a, 
 .check-out-btn a { 
@@ -425,6 +429,101 @@ h1 a, h1 a img { height: 100%; object-fit: cover;}
   transition: .3s;
 }
   /* offer-section style end */
+
+  /* featured-products style start */
+
+ .featured-products { 
+  padding: 80px 0;
+  position: relative;
+  background: var(--backgroungGrey); 
+}
+
+.featured-products h4 {
+  font-size: 30px;
+  text-align: center;
+}
+
+.underline {
+  width: 70px;
+  height: 2px;
+  display: block;
+  position: absolute;
+  top: 11%;
+  left: 50%;
+  background: #6198eb;
+    font-size: 0;
+    transform: translate(-50%, -11%);
+}
+
+ .featured-products .wrapper { width: 68%; }
+  
+  .product-list {
+    padding: 60px 0 80px 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .product-list li { 
+    flex-basis: 18%;
+    margin-left: 2%;
+   }
+
+   .product-list li:first-child{ margin-left: 0; }
+  .product-list li:nth-child(6n+0) { margin-left: 0; }
+
+  .product-list li:nth-child(n+6) { margin-top: 30px; }
+  .product-description { font-size: 14px; }
+
+  .product-type { 
+    display: block; 
+    color: var(--fontGrey);
+    font-size: 13px;
+  }
+
+  .product-type,.ratings { padding: 4px 0; }
+  .rating { font-size: 0; }
+
+  .rating::before { 
+    content: "\f005";
+    font-family: "fontAwesome";
+  font-size: 11px;
+   }
+
+  .price-before { 
+    color: #858282;
+    text-decoration: line-through; 
+  }
+
+  .price-before,.discount-price { font-size: 13px; }
+
+  .blue-color,
+  .green-color,
+  .brown-color,
+  .purple-color { 
+    font-size: 0;
+    padding: 5px;
+    border-radius: 5px;
+   }
+
+   .purple-color { background: #790255; }
+   .blue-color { background: #6198eb; }
+  .green-color { background: #027908; }
+  .brown-color { background: #753e0a; }
+
+  .offer-percent {
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+    object-fit: cover;
+    position: absolute;
+    top: -6px;
+    right: -6px;
+  }
+
+  .product-list li:first-child, 
+  .product-list li:nth-child(6) { position: relative; }
+ /* featured-products style end */
+
 /*=================================
   main styling ends here
 =================================*/
