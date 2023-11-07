@@ -522,7 +522,70 @@ h1 a, h1 a img { height: 100%; object-fit: cover;}
 
   .product-list li:first-child, 
   .product-list li:nth-child(6) { position: relative; }
- /* featured-products style end */
+
+/*  parallax style start */
+
+.parallax-container {
+  margin-bottom: 80px;
+  padding: 70px;
+  background-image: url("/assets/images-logo/banner-03.jpeg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+ }
+
+ .xl { 
+  display: block;
+  font-size: 30px;
+  font-weight: 600; 
+  text-transform: capitalize;
+}
+
+.xl, .fontt { margin: 21px 0; }
+
+.parallax-container h5,
+.fontt { font-size: 18px; }
+
+.size-s {
+  width: 65%;
+   font-size: 13px;
+   line-height: 1.5;
+   }
+
+   .parallax-container 
+   .shop-now-btn a { padding: 8px 2%; }
+/*  parallax style end */
+
+.advantages { 
+  display: flex; 
+  flex-wrap: wrap;
+}
+
+.advantages li { 
+  flex-basis: 25%;
+  text-align: center; 
+}
+
+.advantages h5 { margin: 18px 0; }
+.advantages li span { font-size: 0; }
+
+.advantages li p {
+  width: 99%;
+  font-size: 13px;
+    line-height: 1.5;
+}
+
+.common-img { 
+  width: 50px;
+    height: 50px;
+ }
+
+ .offer p { 
+  padding: 20px 0;
+  font-size: 20px;
+ }
+/* featured-products style end */
 
 /*=================================
   main styling ends here
