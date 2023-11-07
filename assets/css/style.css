@@ -111,23 +111,94 @@ li {
   --red:#f32323;
 }
 
+.font-white { color: var(--white); }
 .caps-first { text-transform: capitalize; }
 
 /*for wrapper*/
 .wrapper {
   max-width: 1360px;
-  width: 86%; 
+  width: 60%; 
   margin: 0 auto;
 }
 /*=================================
   Header styling starts here
 =================================*/
 
+/* home.html style start */
 
+header {
+  width: 100%;
+  padding: 20px 0;
+  position: fixed;
+ background:  rgba(0, 0, 0, .1);
+  z-index: 1;
+}
 
+header .wrapper {
+  width: 96%;
+  display: flex;
+  align-items: center;
+}
 
+header h1 { height: 36px; }
 
+.common-li li a { 
+  font-size: 12px;
+  text-transform: uppercase; 
+}
 
+.menu-one-list { font-weight: 600; }
+h1 a, h1 a img { height: 100%; object-fit: cover;}
+
+.hamburger {
+  display: none;
+    flex-direction: column;
+}
+
+.hamburger .bar {
+  content: '';
+  min-width: 25px;
+  height: 1px;
+  padding-bottom: 2px;
+  border-bottom: 3px solid #fff;
+  display: block;
+  font-size: 0;
+}
+
+.menu-first, .menu-second {  flex-basis: 42%; }
+
+.menu-first {
+  margin-left: 1%;
+}
+
+.menu-second {
+ display: flex;
+ justify-content: end;
+
+}
+
+.home-login { font-size: 0; }
+
+.add-to-cart a::after,.home-login::before {
+  padding-left: 8px;
+  color: var(--white);
+  font-family: "fontAwesome";
+  font-size: 20px;
+}
+
+.add-to-cart a::after { content: "\f290"; }
+.home-login::before { content: "\f183"; }
+.home-login a { display: none; }
+
+.common-li li a, 
+.login-add-to-cart li a { padding: 5px 10px; }
+
+.login-add-to-cart { 
+  flex-basis: 8%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
 /*=================================
   Header styling ends here
 =================================*/  
@@ -193,11 +264,63 @@ li {
   outline: 1px solid var(--red); 
   box-shadow: 1px 1px 8px 1px #e50b0b;
 }
+
 /* index.html file style end */
 
+/* banner secton style start */
 
+.banner {
+  height: 100vh;
+  position: relative; 
+  background-image:linear-gradient(rgba(35, 101, 150, 0.5), rgba(35, 101, 150, 0.5)), url("/assets/images-logo/home-new-bg-free-img.jpeg");
+  filter: brightness(0.8);
+  min-height: 400px; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
+.banner .wrapper { height: 100%; }
 
+.banner-content {
+  width: 37%;
+  position: absolute;
+  top: 33%;
+  left: 19%;
+}
+
+.banner-content h2 {
+  font-size: 47px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.banner-content p{
+  margin: 20px 0;
+  font-size: 20px;
+    font-weight: 600;
+}
+
+.shop-btn, .find-btn {
+  padding: 8px 4%;
+  border: 1px solid var(--white);
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.shop-btn {
+    background: var(--white);
+    color: var(--black);
+    margin-right: 10px;
+}
+
+.find-btn {
+    background: transparent;
+    color: var(--white);
+}
+/* banner secton style end*/
 /*=================================
   main styling ends here
 =================================*/
