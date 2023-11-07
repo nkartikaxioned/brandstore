@@ -657,6 +657,7 @@ footer .wrapper { width: 63%; }
 .bottom-footer {  justify-content: space-between; }
 .bottom-footer p { font-size: 12px; }
 .social-media li { padding: 10px; }
+.bottom-footer p { text-transform: capitalize; }
 
 .social-media li a { 
   font-size: 0; 
