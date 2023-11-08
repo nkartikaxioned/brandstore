@@ -1275,3 +1275,29 @@ footer .wrapper { width: 63%; }
 }
 
 /*media query for 768px ends here*/
+
+/* media query for 640px starts here */
+
+@media only screen and (max-width: 640px){
+
+  .banner-content { width: 65%; }
+  .product-list li { flex-basis: 45%; }
+  .underline { top: 5%; }
+.offer-percent { right: -4px; }
+
+.advantages li { 
+  margin-bottom: 40px;
+  flex-basis: 50%; 
+}
+
+.advantages li:last-child { margin-top: 0; }
+.top-footer { flex-direction: column; }
+
+.for-him, 
+.for-her,
+.subscribe { margin-top: 50px; }
+
+footer .wrapper { width: 85%; }
+}
+
+/* media query for 640px ends here */
