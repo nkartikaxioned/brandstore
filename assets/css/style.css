@@ -1301,3 +1301,34 @@ footer .wrapper { width: 85%; }
 }
 
 /* media query for 640px ends here */
+
+/* media query for 560px starts here */
+@media only screen and (max-width: 560px){
+
+  .for-him, .for-her { width: 55%; }
+  
+  }
+ /* media query for 560px ends here */ 
+
+ /* media query for 480px starts here */
+  @media only screen and (max-width: 480px){
+  
+    header h1 { width: 49%; }
+    .parallax-container { padding: 30px 5%; }
+    
+    }
+  
+   /* media query for 480px ends here */
+
+   /* media query for 375px starts here */
+    @media only screen and (max-width: 375px){
+  
+      .banner-content { width: 85%; }
+      .product-list { flex-direction: column; }
+      .product-list li:first-child { margin-left: 0; }
+      .featured-products .wrapper { width: 80%; }
+      .advantages { flex-direction: column; }
+      
+      }
+  
+      /* media query for 375px ends here */
