@@ -1156,9 +1156,7 @@ footer .wrapper { width: 63%; }
 /*media query for 995px starts here*/
 @media only screen and (max-width: 995px) {
 
- /* login form style start */
  .login form { width: 60%; }
- /* login form style end */
  .products-offers-section .wrapper { width: 80%; }
 
  .product-list li {
@@ -1176,3 +1174,104 @@ footer .wrapper { width: 63%; }
  footer .wrapper { width: 95%; } 
  .product-list li:nth-child(n+6) { margin-top: 0; }
 }  
+
+/*media query for 995px ends here*/
+
+/*media query for 768px starts here*/
+
+@media only screen and (max-width: 768px) {
+
+  .html-scroll { overflow-y: hidden; }
+  header h1 { width: 66%; }
+  .menu-first, .menu-second { flex-basis: 0; }
+  .hamburger { display: flex; }
+
+.menu-firstt { 
+  width: 100%;
+    height: 100vh;
+    padding: 50px;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    text-align: center;
+    background: var(--blue);
+    transform: translate(100%, 0);
+    transition: all .5s ease-in-out;
+ }
+
+ .menu-one-list { 
+  width: 100%;
+  display: flex;
+  flex-direction: column; 
+}
+
+  .menu-second {
+    width: 100%;
+        display: flex;
+        flex-direction: column;
+    justify-content: start;
+
+  }
+ 
+  .common-li li a {
+    padding: 15px;
+    font-size: 17px;
+    text-transform: uppercase;
+    transition: .3s;
+}
+
+  .login-add-to-cart {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.add-to-cart a::after,
+.home-login::before { padding-left: 25px; }
+
+  .offer-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.offer-list li:not(:last-child) { margin-bottom: 20px; }
+.banner-content { width: 50%; }
+.banner-content h2 { font-size: 40px; }
+.products-offers-section .wrapper { width: 90%; }
+
+.shop-now-btn a, .check-out-btn a {
+  width: 100%;
+  text-align: center;
+}
+
+.product-list li:nth-child(n+6) { margin-top: 20px; }
+.underline { top: 4%; }
+.offer-section .content-text { bottom: 15%; }
+.offer-list li:not(:first-child) { margin-left: 0; }
+
+.product-list li { 
+  flex-basis: 45%; 
+  margin-top: 20px;
+}
+
+.advantages li { flex-basis: 33%; }
+.offer-percent { right: 16px; }
+.advantages li:last-child { margin-top: 30px; }
+.logo { width: 50%; }
+
+.bottom-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bottom-footer p { text-align: center; }
+.subscribe { width: 50%; }
+
+}
+
+/*media query for 768px ends here*/
