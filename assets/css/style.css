@@ -30,7 +30,7 @@ footer, header, hgroup, menu, nav, section {
 }
 
 /* Force scrollbar */
-html { overflow-y: scroll; }
+html { overflow-y: scroll; scroll-behavior: smooth;}
 
 /* Align radios and text inputs with their label */
 
@@ -125,6 +125,7 @@ li {
 .font-white { color: var(--white); }
 .caps-first { text-transform: capitalize; }
 .caps { text-transform: uppercase; }
+.slider-image { transition: .4s; }
 
 .capital-bold {
   text-transform: capitalize;
@@ -226,7 +227,7 @@ h1 a, h1 a img { height: 100%; object-fit: cover;}
 .add-to-cart a::after { content: "\f290"; }
 
 .home-login a::before { 
-  content: "\f183"; 
+  content: "\f007"; 
   transition: .3s;
 }
 
@@ -326,6 +327,11 @@ h1 a, h1 a img { height: 100%; object-fit: cover;}
   font-size: 15px;
   transition: .3s;
   text-transform: capitalize;
+}
+
+.errortxt {
+  color: #e50b0b;
+  font-size: 10px;
 }
 
 .error-field { 
@@ -644,7 +650,7 @@ h1 a, h1 a img { height: 100%; object-fit: cover;}
 .advantages li span { font-size: 0; }
 
 .advantages li p {
-  width: 99%;
+  width: 98%;
   font-size: 13px;
     line-height: 1.5;
 }
@@ -972,14 +978,15 @@ transition: .3s;
     flex-wrap: wrap;
 }
 
-.product-lists li:nth-child(n+4) { margin-top: 20px; }
+.product-lists li:nth-child(n+4) { margin-top: 28px; }
 .product-lists li:not(:first-child) { margin-left: 18px; }
 .product-lists li:nth-child(3n+1) { margin-left: 0; }
 .product-lists li:nth-child(6) { position: relative; }
 .product-lists li { flex-basis: 31%; }
 
+.product-modal h3 { text-align: center; }
+
 .product-description h3 { 
-  text-align: center;
   font-size: 12px; 
   font-weight: 600;
 }
@@ -1270,6 +1277,7 @@ footer .wrapper { width: 63%; }
   flex-direction: column; 
 }
 
+.common-li li a, .login-add-to-cart li a { padding: 5px 6px; }
 .search input { width: 95%; }
 .categories-list { width: 100%; }
 .categories-list li { width: 97%; }
