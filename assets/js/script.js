@@ -30,6 +30,8 @@ const image = document.querySelectorAll('.product-lists li a'),
   filterButton = document.querySelector('.filter-button'),
   fieldbox = document.querySelector('.field-contain'),
   logout = document.querySelector('.home-login'),
+  email = document.querySelector('.workemail'),
+  subscribe = document.querySelector('.subscribe-btn'),
   maxSliderValue = 60;
 // let changeee;
 
@@ -106,11 +108,40 @@ if (homePage || productsPage) {
 
     window.location.href = "/index.html";
   })
+//on click validate email
+  subscribe.addEventListener('click', () => {
+    validateEmail();
+  })
+}
+//validate email
+function validateEmail() {
+  removeErrorTxt();
+  const mail = email.value.trim();
+  const validRegex =  /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
+  if( mail === '' || mail.match(validRegex) == null ) {
+    email.classList.add('error-field');
+    Textt = document.createElement("span");
+    Textt.classList.add('errortxt');
+    Textt.innerText = "*Invalid Email";
+    formField.appendChild(Textt)
+  } else {
+    workemail.classList.remove('error-field');
+    alert("Subscribed Successfully");
+  }
+}
+
+// to remove errortext span if already exists
+const removeErrorTxt = () => {
+  const existingErrorText = document.querySelector('.errortxt');
+  if (existingErrorText) {
+    existingErrorText.remove();
+  }
 }
 
 //to avoid addeventlistner error validating pages before executing code     
 if (homePage) {
   let number = 0;
+  //on click displays previous slide
   previousButton.addEventListener('click', () => {
 
     if (number === 50 || number === 25) {
@@ -118,7 +149,7 @@ if (homePage) {
       sliderImage.style.transform = `translateX(-${number}%)`;
     }
   })
-
+//on click displays next slide
   nextButton.addEventListener('click', () => {
     if (number < maxSliderValue) {
 
