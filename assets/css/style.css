@@ -443,13 +443,13 @@ h1 a, h1 a img { height: 100%;
    left top, left bottom,
    from(rgba(35, 101, 150, 0.5)),
    to(rgba(35, 101, 150, 0.5))), 
-   url("./assets/images-logo/home-new-bg-free-img.jpeg"); 
+   url("../images-logo/home-new-bg-free-img.jpeg"); 
   background-image:-o-linear-gradient(rgba(35, 101, 150, 0.5),
    rgba(35, 101, 150, 0.5)), 
-   url("./assets/images-logo/home-new-bg-free-img.jpeg"); 
+   url("../images-logo/home-new-bg-free-img.jpeg"); 
   background-image:linear-gradient(rgba(35, 101, 150, 0.5),
    rgba(35, 101, 150, 0.5)), 
-   url("./assets/images-logo/home-new-bg-free-img.jpeg");
+   url("../images-logo/home-new-bg-free-img.jpeg");
   -webkit-filter: brightness(0.8);
           filter: brightness(0.8);
   min-height: 400px; 
@@ -735,7 +735,7 @@ h1 a, h1 a img { height: 100%;
 .parallax-container {
   margin-bottom: 80px;
   padding: 70px;
-  background-image: url("./assets/images-logo/banner-03.jpeg");
+  background-image: url("./../images-logo/banner-03.jpeg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;

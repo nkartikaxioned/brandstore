@@ -55,7 +55,7 @@ if (indexPage) {
       sessionStorage.setItem('username', usernameValue);
       sessionStorage.setItem('password', passwordValue);
       //redirect to home page
-      window.location.href = "./home.html";
+      window.location.href = "./trainee/kartik-11-10/home.html";
     }
     else {
       password.classList.add('error-field');
