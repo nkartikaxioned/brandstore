@@ -55,7 +55,7 @@ if (indexPage) {
       sessionStorage.setItem('username', usernameValue);
       sessionStorage.setItem('password', passwordValue);
       //redirect to home page
-      window.location.href = "/home.html";
+      window.location.href = "./home.html";
     }
     else {
       password.classList.add('error-field');
@@ -104,9 +104,9 @@ if (homePage || productsPage) {
     sessionStorage.removeItem('password')
 
     //modifies the current history entry, replacing it with null
-    history.replaceState(null, null, '/index.html');
+    history.replaceState(null, null, './index.html');
 
-    window.location.href = "/index.html";
+    window.location.href = "./index.html";
   })
 //on click validate email
   subscribe.addEventListener('click', () => {
