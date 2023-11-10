@@ -27,7 +27,7 @@ maxSliderValue = 60, minSliderValue = 0;
   //to avoid addeventlistner error validating pages before executing code 
 if(indexPage){
     
-        login.addEventListener('submit' , (e) => {
+        login.addEventListener('click' , (e) => {
             //prevent form submission
             e.preventDefault();
             usernameValue = username.value;
@@ -80,26 +80,12 @@ if(homePage || productsPage){
   //to avoid addeventlistner error validating pages before executing code     
 if(homePage){
     let number = 0;
-    let numberr =0;
     previousButton.addEventListener('click', () => {
-        
-      numberr =2;
-      if(numberr === 2){
-        sliderImage. style. transform=`translateX(${ -20}%)`;
-      }
-      if(numberr === 1){
-        sliderImage. style. transform=`translateX(${ -1}%)`;
-      }
-        numberr--;
-        //         numberr = 2;
                 
-        //         console.log("numberr" + numberr);
-                
-                
-        //         sliderImage. style. transform=`translateX(${ numberr*-10}%)`;
-        //   numberr--;
-            
- 
+        if( number === 50 || number === 25){
+            number += -25        
+            sliderImage. style. transform=`translateX(-${ number}%)`;
+        }     
         })
         
         nextButton.addEventListener('click', () => {
@@ -110,6 +96,17 @@ if(homePage){
                 sliderImage. style. transform=`translateX(-${number}%)`;
             }
         })
+
+        //to change header background color
+        var scrollTrigger = 500;
+
+        window.onscroll = function() {
+          if(window.scrollY >= scrollTrigger) {
+            document.getElementsByTagName("header")[0].classList.add('bgr');
+          } else {
+            document.getElementsByTagName("header")[0].classList.remove('bgr');
+          }
+          }
 }
     
     //to avoid addeventlistner error validating pages before executing code 

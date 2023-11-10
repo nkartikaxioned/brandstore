@@ -126,6 +126,7 @@ li {
 .caps-first { text-transform: capitalize; }
 .caps { text-transform: uppercase; }
 .slider-image { transition: .4s; }
+.bgr { background: var(--black); }
 
 .capital-bold {
   text-transform: capitalize;
@@ -978,7 +979,7 @@ transition: .3s;
     flex-wrap: wrap;
 }
 
-.product-lists li:nth-child(n+4) { margin-top: 28px; }
+.product-lists li:nth-child(n+4) { margin-top: 30px; }
 .product-lists li:not(:first-child) { margin-left: 18px; }
 .product-lists li:nth-child(3n+1) { margin-left: 0; }
 .product-lists li:nth-child(6) { position: relative; }
@@ -1201,7 +1202,7 @@ footer .wrapper { width: 63%; }
 
 /* home.html style end*/
 /* header style */
-.common-li li a:hover { color: var(--black);}
+.common-li li a:hover { color: var(--colorBlue);}
 /* header style end */
 .subscribe-btn a:hover {
   border: 1px solid var(--black);
@@ -1382,7 +1383,7 @@ footer .wrapper { width: 63%; }
 .bottom-footer p { text-align: center; }
 .subscribe { width: 50%; }
 .product-lists li { flex-basis: 48%;}
-.product-lists li:nth-child(3){ margin-top: 20px; }
+.product-lists li:nth-child(3){ margin-top: 30px; }
 .product-lists li:nth-child(odd) { margin-left: 0; }
 .product-lists li:nth-child(even) { margin-left: 18px; }
 .page { flex-direction: column; }
