@@ -46,7 +46,7 @@ if(indexPage){
                 username.classList.add('error-field');
                 errorText = document.createElement("span");
                 errorText.classList.add('.errortxt')
-                errorText.innerText = "Invalid UserName or Password";
+                errorText.innerText = "*Invalid UserName or Password";
                 formField.forEach(field => {
                     field.appendChild(errorText);
                 })
