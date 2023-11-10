@@ -1,6 +1,6 @@
 <!doctype html>
 <!-- If multi-language site, reconsider usage of html lang declaration here. -->
-<html lang="en"> 
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
@@ -12,10 +12,10 @@
   <!-- Place favicon.ico in the root directory: mathiasbynens.be/notes/touch-icons -->
   <link rel="shortcut icon" href="favicon.ico" />
   <!--font-awesome link for icons-->
-  <link rel="stylesheet" media="screen" href="assets/vendor/font-awesome/css/all.min.css" >
+  <link rel="stylesheet" media="screen" href="assets/vendor/font-awesome/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <!-- Default style-sheet is for 'media' type screen (color computer display).  -->
-  <link rel="stylesheet" media="screen" href="./assets/css/style.css" >
+  <link rel="stylesheet" media="screen" href="./assets/css/style.css">
 </head>
 
 <body class="index-page">
@@ -23,11 +23,12 @@
   <div class="container">
     <!--main section start-->
     <main>
-       <section class="login">
+      <section class="login">
         <div class="wrapper">
-           <h1>login</h1>
-           <form action="./home.html" target="_self" method="post">
-            <div class="form-field">
+          <h1>login</h1>
+          <form action="./home.html" target="_self" method="post">
+            <div class="field-contain">
+              <div class="form-field">
                 <label for="username" class="caps-first">user name</label>
                 <input type="text" id="username" name="username" class="username" required>
               </div>
@@ -35,16 +36,18 @@
                 <label for="password" class="caps-first">password</label>
                 <input type="password" id="password" name="password" class="password" required>
               </div>
-              <div class="login-bnt">
-                <input type="submit" class="login-bnt" value="submit">
-              </div>
-           </form>
+            </div>
+            <div class="login-bnt">
+              <input type="submit" class="login-bnt" value="submit">
+            </div>
+          </form>
         </div>
-       </section>
+      </section>
     </main>
     <!--main section end-->
   </div>
   <!--container end-->
   <script src="./assets/js/script.js"></script>
 </body>
+
 </html>
