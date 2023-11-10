@@ -10,7 +10,7 @@
        Remove comments from this tag, when you want to apply media queries to the website. -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <!-- Place favicon.ico in the root directory: mathiasbynens.be/notes/touch-icons -->
-  <link rel="shortcut icon" href="favicon.ico" />
+  <link rel="shortcut icon" href="favicon.ico">
   <!--font-awesome link for icons-->
   <link rel="stylesheet" media="screen" href="assets/vendor/font-awesome/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
@@ -27,10 +27,10 @@
         <h1><a href="home.html"><img src="./assets/images-logo/logo@2x-free-img.png" alt="Company Logo"></a></h1>
         <nav class="menu-firstt">
           <ul class="menu-one-list common-li">
-            <li><a href="#FIXME" title="EVERYTHING" class="font-black" data-filter="everything">everything</a></li>
-            <li><a href="#FIXME" title="WOMEN" class="font-black" data-filter="women">women</a></li>
-            <li><a href="#FIXME" title="MEN" class="font-black" data-filter="men">men</a></li>
-            <li><a href="#FIXME" title="ACCESSORIES" class="font-black" data-filter="accessories">accessories</a></li>
+            <li><a href="products.html" title="EVERYTHING" class="filter-btn filter-active font-black" data-filter="everything">everything</a></li>
+            <li><a href="#FIXME" title="WOMEN" class="filter-btn font-black" data-filter="women">women</a></li>
+            <li><a href="#FIXME" title="MEN" class="filter-btn font-black" data-filter="men">men</a></li>
+            <li><a href="#FIXME" title="ACCESSORIES" class="filter-btn font-black" data-filter="accessories">accessories</a></li>
           </ul>
           <ul class="menu-second common-li">
             <li><a href="#FIXME" title="ABOUT" class="font-black">about</a></li>
@@ -39,7 +39,7 @@
         </nav>
         <ul class="login-add-to-cart">
           <li class="add-to-cart"><a href="#FIXME" title="Cart" class="font-black">$120</a></li>
-          <li class="home-login"><a href="#FIXME" title="Login" class="font-black">login</a></li>
+          <li class="home-login"><a href="#FIXME" title="Logout" class="font-black">logout</a></li>
         </ul>
         <div class="hamburger">
           <span class="bar">bar</span>
@@ -65,17 +65,17 @@
                   <input type="range" min="20" max="290" value="14.5" id="upper">
                 </div>
                 <div class="price-wrap">
-                  <div class="filter-btn">
+                  <div class="filter-button">
                     <a href="#FIXME" title="Filter" class="price-title">filter</a>
                   </div>
                   <div class="price-wrap-1">
                     <label for="one">Price $</label>
-                    <input id="one">
+                    <input id="one" class="min-val">
                   </div>
                   <div class="price-wrap_line">-</div>
                   <div class="price-wrap-2">
                     <label for="two">$</label>
-                    <input id="two">
+                    <input id="two" class="max-val">
                   </div>
                 </div>
               </fieldset>
@@ -83,10 +83,10 @@
             <div class="categories">
               <h2 class="common">categories</h2>
               <ul class="categories-list">
-                <li><a href="#FIXME" title="Accessories" data-filter="accessories">accessories</a><a
+                <li><a href="#FIXME" title="Accessories" class="filter-btn" data-filter="accessories">accessories</a><a
                     href="#FIXME">(7)</a></li>
-                <li><a href="#FIXME" title="Men" data-filter="men">men</a><a href="#FIXME">(14)</a></li>
-                <li><a href="#FIXME" title="Women" data-filter="women">women</a><a href="#FIXME">(17)</a></li>
+                <li><a href="#FIXME" title="Men" class="filter-btn" data-filter="men">men</a><a href="#FIXME">(14)</a></li>
+                <li><a href="#FIXME" title="Women" class="filter-btn" data-filter="women">women</a><a href="#FIXME">(17)</a></li>
               </ul>
             </div>
             <ul class="our-best-sellers">
@@ -94,7 +94,7 @@
                 <h2 class="common">our best sellers</h2>
               </li>
               <li>
-                <img src="./assets/images-logo/product-w-jeans4-300x300.jpeg" alt="Jeans Image">
+                <a href="#FIXME"><img src="./assets/images-logo/product-w-jeans4-300x300.jpeg" alt="Jeans Image"></a>
                 <div>
                   <h3>basic gray jeans</h3>
                   <p><span class="product-rating">rating</span><span class="product-rating">rating</span><span
@@ -104,7 +104,7 @@
                 </div>
               </li>
               <li>
-                <img src="./assets/images-logo/sports-shoe4-300x300.jpeg" alt="Shoes Image">
+                <a href="#FIXME"><img src="./assets/images-logo/sports-shoe4-300x300.jpeg" alt="Shoes Image"></a>
                 <div>
                   <h3><span class="caps">dnk</span> black shoes</h3>
                   <p><span class="product-rating">rating</span><span class="product-rating">rating</span><span
@@ -114,7 +114,7 @@
                 </div>
               </li>
               <li>
-                <img src="./assets/images-logo/product-accessory3-300x300.jpeg" alt="Accessories Image">
+                <a href="#FIXME"><img src="./assets/images-logo/product-accessory3-300x300.jpeg" alt="Accessories Image"></a>
                 <div>
                   <h3>buddha bracelet</h3>
                   <p><span class="product-rating">rating</span><span class="product-rating">rating</span><span
@@ -124,7 +124,7 @@
                 </div>
               </li>
               <li>
-                <img src="./assets/images-logo/product-w-jeans2-300x300.jpeg" alt="Jeans Image">
+                <a href="#FIXME"><img src="./assets/images-logo/product-w-jeans2-300x300.jpeg" alt="Jeans Image"></a>
                 <div>
                   <h3>blue denim jeans</h3>
                   <p><span class="product-rating">rating</span><span class="product-rating">rating</span><span
@@ -134,7 +134,7 @@
                 </div>
               </li>
               <li>
-                <img src="./assets/images-logo/product-accessory1-300x300.jpeg" alt="Accessories Image">
+                <a href="#FIXME"><img src="./assets/images-logo/product-accessory1-300x300.jpeg" alt="Accessories Image"></a>
                 <div>
                   <h3>boho bangle bracelet</h3>
                   <p><span class="product-rating">rating</span><span class="product-rating">rating</span><span
